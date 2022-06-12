@@ -35,7 +35,7 @@ end
 mvdat=(mv(3:length(mv)));
 % La primera linea da indicio de cuantos datos deben tomarse
 
-numeroCapas = 15; % Modificar seg�n el n�mero de capas que se hayan usado
+numeroCapas = 15; % Modificar según el número de capas que se hayan usado
 capasModelo = (numeroCapas * 2)-1;
 p=0;j=2;
 cdat = max(mvdat)-min(mvdat);
@@ -120,7 +120,7 @@ view(90,90);
 
 % Amplificación teórica
     frecAmp = datos(35:300,2); % Este valor de 30:130 debe ajustarse para la amp
-    HV = datos(35:300,3); % Este valor tambi�n debe ajustarse, las muestras en frec y amp
+    HV = datos(35:300,3); % Este valor también debe ajustarse, las muestras en frec y amp
     
 % Todas las amplificaciones teóricas
 j=2;
@@ -142,7 +142,7 @@ ax.FontSize = 11;
 axis([0.3  5.6 1 ampMaxima + 2])
 set(gca,'XMinorTick','on','YMinorTick','on')
 xlabel('Frecuencia [Hz]','FontSize', 17)
-ylabel('H/V Te�rico','FontSize', 17); 
+ylabel('H/V Teórico','FontSize', 17); 
 %legend({'Línea 1, 1.07 Hz','Línea 2, 1.07 Hz','Línea 3, 1.17 Hz',...
 %    'Línea 4, 1.07 Hz','Línea 5, 0.97 Hz','Línea 6, 1.07 Hz',...
 %    'Línea 7, 1.27 Hz','Línea 8, 1.07 Hz','Línea 9, 1.07 Hz'})
@@ -155,7 +155,7 @@ ta.Color = [0 .1 .1];
 % ta.String = 'f_1 = 4 Hz';              
 % ta.Color = [0 .1 .1]; 
 
-% C�lculo de onda P
+% Cálculo de onda P
 
 Vs = velocidad(:,:);
 vd = [0.39,0.39,0.39,0,39,0.38,0.38,0.38,0.38,0.38,0.38,...
